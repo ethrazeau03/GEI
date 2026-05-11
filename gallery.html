@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23182918%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22Georgia,serif%22 font-size=%2218%22 font-weight=%22700%22 fill=%22%23c5ba9e%22 text-anchor=%22middle%22%3EG%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="Browse our project gallery — interlock installations, front patios, stone steps, walkways, garden borders, and exterior landscaping work by Gears Exteriors and Interlock." />
+  <title>Project Gallery | Gears Exteriors and Interlock</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Gears Exteriors home">
+          <span class="nav-logo-main">Gears Exteriors</span>
+          <span class="nav-logo-sub">&amp; Interlock — Stittsville, ON</span>
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="btn btn-primary nav-cta">Get a Free Quote</a></li>
+        </ul>
+        <button type="button" class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-mobile-cta">Get a Free Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Gallery page header">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Gallery</span>
+        </nav>
+        <h1>Project Gallery</h1>
+        <p>
+          Browse through some of the interlock and exterior projects we've completed for homeowners across Stittsville, Ottawa, and Kanata.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY PAGE -->
+    <section class="gallery-page" aria-labelledby="gallery-page-title">
+      <div class="container">
+        <div class="reveal" style="margin-bottom:2rem;">
+          <h2 class="section-title visually-hidden" id="gallery-page-title">Project Gallery</h2>
+
+          <!--
+            PHOTO NOTE: When replacing placeholder images with real project photos,
+            also update each item's data-category attribute to match your filter categories:
+            - "interlock" for interlock driveway, patio, walkway projects
+            - "steps"     for stone steps projects
+            - "porch"     for porch overlays and porch repairs
+            - "borders"   for garden and laneway border projects
+            - "landscaping" for general exterior landscaping projects
+          -->
+          <div class="gallery-filter" role="group" aria-label="Filter gallery by category">
+            <button class="filter-btn active" data-filter="all" type="button">All Projects</button>
+            <button class="filter-btn" data-filter="interlock" type="button">Interlock</button>
+            <button class="filter-btn" data-filter="steps" type="button">Stone Steps</button>
+            <button class="filter-btn" data-filter="porch" type="button">Porch &amp; Overlays</button>
+            <button class="filter-btn" data-filter="borders" type="button">Borders</button>
+            <button class="filter-btn" data-filter="landscaping" type="button">Landscaping</button>
+          </div>
+        </div>
+
+        <div class="gallery-page-grid reveal">
+
+          <!--
+            PHOTO NOTE: Each item below uses a placeholder Unsplash image.
+            Replace src="" with paths to your own project photos.
+            Recommended: jpg or webp format, 800–1200px wide, good natural lighting.
+            Update alt="" text to describe the specific project (e.g., "Interlock driveway installed in Stittsville, 2024").
+          -->
+
+          <div class="gallery-page-item" data-category="interlock" role="button" tabindex="0" aria-label="View interlock driveway project">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              alt="Interlock driveway installation — precision-laid stone pattern"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Interlock Driveway</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="steps" role="button" tabindex="0" aria-label="View stone steps project">
+            <img
+              src="https://images.unsplash.com/photo-1584622650814-05fb07c79879?auto=format&fit=crop&w=800&q=80"
+              alt="Natural stone steps at front entrance — durable and level installation"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Stone Steps</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="interlock" role="button" tabindex="0" aria-label="View front patio interlock project">
+            <img
+              src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=800&q=80"
+              alt="Front patio with interlock and clean border detail"
+              loading="lazy"
+              width="800"
+              height="700"
+            />
+            <div class="gallery-overlay"><span>Front Patio</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="borders" role="button" tabindex="0" aria-label="View garden border project">
+            <img
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80"
+              alt="Garden border with interlock edging — clean and defined"
+              loading="lazy"
+              width="800"
+              height="550"
+            />
+            <div class="gallery-overlay"><span>Garden Border</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="landscaping" role="button" tabindex="0" aria-label="View landscaping project">
+            <img
+              src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+              alt="Exterior landscaping — walkway and front yard cleanup"
+              loading="lazy"
+              width="800"
+              height="500"
+            />
+            <div class="gallery-overlay"><span>Exterior Landscaping</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="porch" role="button" tabindex="0" aria-label="View porch overlay project">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+              alt="Porch overlay — refreshed front entrance with new concrete finish"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Porch Overlay</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="borders" role="button" tabindex="0" aria-label="View laneway border project">
+            <img
+              src="https://images.unsplash.com/photo-1575403071235-5dcd06cbf169?auto=format&fit=crop&w=800&q=80"
+              alt="Laneway border — interlock edging along residential driveway"
+              loading="lazy"
+              width="800"
+              height="520"
+            />
+            <div class="gallery-overlay"><span>Laneway Border</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="landscaping" role="button" tabindex="0" aria-label="View exterior landscaping project">
+            <img
+              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+              alt="Exterior home landscaping — defined beds and clean driveway border"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Exterior Work</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="interlock" role="button" tabindex="0" aria-label="View interlock walkway project">
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+              alt="Interlock walkway from driveway to front door — neat and straight"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Interlock Walkway</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="porch" role="button" tabindex="0" aria-label="View porch repair project">
+            <img
+              src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+              alt="Front porch repair — restored and refinished porch surface"
+              loading="lazy"
+              width="800"
+              height="550"
+            />
+            <div class="gallery-overlay"><span>Porch Repair</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="steps" role="button" tabindex="0" aria-label="View stone steps and walkway project">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80"
+              alt="Stone steps and interlock walkway combination — front entrance"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+            <div class="gallery-overlay"><span>Steps &amp; Walkway</span></div>
+          </div>
+
+          <div class="gallery-page-item" data-category="landscaping" role="button" tabindex="0" aria-label="View front garden project">
+            <img
+              src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80"
+              alt="Front garden work — cleaned up beds and defined stone border"
+              loading="lazy"
+              width="800"
+              height="500"
+            />
+            <div class="gallery-overlay"><span>Front Garden Work</span></div>
+          </div>
+
+        </div>
+
+        <p class="reveal" style="text-align:center;color:var(--text-light);font-size:0.88rem;margin-top:2rem;">
+          Photos shown are representative placeholder images. Client project photos will replace these once available.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" aria-labelledby="gallery-cta-title">
+      <div class="container cta-banner-inner">
+        <div class="reveal">
+          <h2 id="gallery-cta-title">Like What You See?</h2>
+          <p>Reach out for a free quote on your next interlock or exterior project. We'd love to show you what we can do for your property.</p>
+          <div class="cta-banner-actions">
+            <a href="contact.html" class="btn btn-primary">Request a Free Quote</a>
+            <a href="tel:6138682300" class="btn btn-outline">Call (613) 868-2300</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name">Gears Exteriors and Interlock</div>
+          <div class="footer-brand-tagline">Stittsville, Ontario</div>
+          <p>Local interlock and exterior landscaping specialists serving Stittsville, Ottawa, Kanata, and surrounding communities.</p>
+          <div class="footer-stars">
+            <span class="stars" aria-label="4.9 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span>4.9 &mdash; 81 Google Reviews</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>
+            <a href="tel:6138682300">(613) 868-2300</a><br />
+            83 Seabrooke Dr<br />
+            Stittsville, ON K2S 2E8
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="footer-year"></span> Gears Exteriors and Interlock. All rights reserved.</span>
+        <span>83 Seabrooke Dr, Stittsville, ON K2S 2E8</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    var footerYear = document.getElementById('footer-year');
+    if (footerYear) footerYear.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
