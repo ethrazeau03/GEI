@@ -1,4 +1,5 @@
 <h1 align="center">Gears Exteriors and Interlock — Website</h1>
+<h2> Visit the Website at https://ethrazeau03.github.io/GEI/</h2>
 
 <p align="center">
   A clean, mobile-friendly website for a local landscaping and interlock company in Stittsville, Ontario.
